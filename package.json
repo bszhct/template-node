@@ -4,7 +4,7 @@
   "description": "通用的 Node Cli 脚手架",
   "scripts": {
     "dev": "tsc --watch",
-    "tsc": "tsc",
+    "build": "tsc",
     "eslint": "eslint . --ext .ts,.tsx",
     "es:fix": "eslint . --ext .ts,.tsx --fix"
   },
