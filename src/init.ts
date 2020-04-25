@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-export default () => console.log('init')
+export default (): void => console.log('init')

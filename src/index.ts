@@ -1,6 +1,7 @@
 #!/usr/bin/env node
+/* eslint-disable @typescript-eslint/no-var-requires */
 
-import * as program from 'caporal'
+import * as program from 'commander'
 import * as updateNotifier from 'update-notifier'
 
 import init from './init'
@@ -13,13 +14,14 @@ program.version(pkg.version)
 const notifier = updateNotifier({
   pkg,
   // 一周
-  updateCheckInterval: 1000 * 60 * 60 * 24 * 7,
+  updateCheckInterval: 1000 * 60 * 60 * 24 * 7
 })
 notifier.notify()
 
 // 初始化工程模板
 program
-  .command('init', '初始化工程')
+  .command('init')
+  .description('初始化工程')
   .action(init)
 
 program.parse(process.argv)
