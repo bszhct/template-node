@@ -1,7 +1,7 @@
 {
   "name": "@bszhct/component-node",
-  "version": "0.0.1",
-  "description": "通用的 Node Cli 脚手架",
+  "version": "1.0.0",
+  "description": "通用的 Node CLI 脚手架",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
