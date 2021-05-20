@@ -1,6 +1,6 @@
 # template-node
 
-通用的 Node Cli 脚手架。
+通用的 Node CLI 脚手架。
 
 
 ## 反馈
